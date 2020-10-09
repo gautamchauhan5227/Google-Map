@@ -20,7 +20,7 @@ class _Map_ScreenState extends State<Map_Screen> {
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
   PolylinePoints polylinePoints = PolylinePoints();
-  String googleAPiKey = "AIzaSyCZa1NSFDU4eVIbBxW_XA3KSET8-ejecsk";
+  String googleAPiKey = "Your API KEY";
   bool showData = false;
   MapData mapData;
   String _mode = 'Choose Mode';
