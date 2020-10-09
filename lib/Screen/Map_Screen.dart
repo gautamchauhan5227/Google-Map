@@ -13,14 +13,14 @@ class Map_Screen extends StatefulWidget {
 
 class _Map_ScreenState extends State<Map_Screen> {
   GoogleMapController mapController;
-  double _originLatitude = 21.191797, _originLongitude = 72.829062;
-  double _destLatitude = 22.294121, _destLongitude = 70.796917;
+  double _originLatitude = 21.1959, _originLongitude = 72.7933;
+  double _destLatitude = 21.1418, _destLongitude = 72.7709;
 
   Map<MarkerId, Marker> markers = {};
   Map<PolylineId, Polyline> polylines = {};
   List<LatLng> polylineCoordinates = [];
   PolylinePoints polylinePoints = PolylinePoints();
-  String googleAPiKey = "Your Api Key";
+  String googleAPiKey = "AIzaSyCZa1NSFDU4eVIbBxW_XA3KSET8-ejecsk";
   bool showData = false;
   MapData mapData;
   String _mode = 'Choose Mode';
@@ -196,7 +196,7 @@ class _Map_ScreenState extends State<Map_Screen> {
         polylineId: id,
         color: Colors.red,
         points: polylineCoordinates,
-        width: 5);
+        width: 3);
     polylines[id] = polyline;
     setState(() {});
   }
